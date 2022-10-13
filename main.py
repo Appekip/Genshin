@@ -2,6 +2,7 @@ import random
 import tkinter
 from tkinter import *
 
+
 state = False
 
 #wishes= int(input("How many wishes do you want to do? \nType here: "))
@@ -336,6 +337,12 @@ def clearHistory():
     player.rateUpPityFour = 0
     player.rateUpPityFive = 0
 
+def printChara():
+    T.delete('1.0', END)
+    for x in fiveStarPool:
+        print("grhdjbdjg")
+
+
 generateDrops()
 
 root = Tk()
@@ -346,11 +353,14 @@ root.title("Genshin Gacha Simulator")
 
 #image = PhotoImage(file = "Genshin_Simu.png")
 
-root.geometry("640x900")
+root.geometry("1980x1080")
 
 root.configure(bg=bg)
 
-canvas = tkinter.Canvas(root, bg=bg, highlightthickness=0)
+canvasLeft = tkinter.Canvas(root, bg=bg, highlightthickness=0)
+canvasLeft.pack(side=tkinter.LEFT, pady=20)
+
+canvas = tkinter.Canvas(canvasLeft, bg=bg, highlightthickness=0)
 canvas.pack(pady=5)
 
 title = Label(canvas, text="Genshin Simulator", font=("Arial", 25),bg=bg, bd=0,fg="white")
@@ -365,7 +375,7 @@ wishBtn10.pack(pady=5, side=tkinter.LEFT)
 wishBtn90 = tkinter.Button(canvas, text="Wish X 90", bg="#ADD8E6", command=gachaPullNine, font=("Arial", 15))
 wishBtn90.pack(pady=5, side=tkinter.LEFT)
 
-canvas2 = tkinter.Canvas(root, bg=bg, highlightthickness=0)
+canvas2 = tkinter.Canvas(canvasLeft, bg=bg, highlightthickness=0)
 canvas2.pack(pady=5)
 
 histBtn = tkinter.Button(canvas2, text="Full history", bg="#ADD8E6", command=histPrint, font=("Arial", 15))
@@ -395,9 +405,15 @@ statClearBtn.pack(pady=5, side=tkinter.RIGHT)
 canvas4 = tkinter.Canvas(root, bg=bg, highlightthickness=0)
 canvas4.pack(pady=5)
 
-T = tkinter.Text(canvas4, height=100, width=50)
+T = tkinter.Text(canvas4, height=100, width=100)
 
 T.pack()
+
+photo = PhotoImage(file="Genshin_SimuRezizd.gif")
+
+photoLabel = Label(canvasLeft,image=photo)
+
+photoLabel.pack(pady=5)
 
 root.mainloop()
 
