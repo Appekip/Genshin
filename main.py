@@ -2,9 +2,8 @@ import random
 import tkinter
 from tkinter import *
 
-
-state = False
-
+#Variables used with the old while loop
+#state = False
 #wishes= int(input("How many wishes do you want to do? \nType here: "))
 
 threeStarPool = []
@@ -337,11 +336,8 @@ def clearHistory():
     player.rateUpPityFour = 0
     player.rateUpPityFive = 0
 
-def printChara():
+def printCharaDupes():
     T.delete('1.0', END)
-    for x in fiveStarPool:
-        print("grhdjbdjg")
-
 
 generateDrops()
 
@@ -351,9 +347,7 @@ bg = "#301934"
 
 root.title("Genshin Gacha Simulator")
 
-#image = PhotoImage(file = "Genshin_Simu.png")
-
-root.geometry("1980x1080")
+root.geometry("1280x720")
 
 root.configure(bg=bg)
 
@@ -418,24 +412,24 @@ photoLabel.pack(pady=5)
 root.mainloop()
 
 #Not in use anymore, just an old leftover from a text based console gui
-while (state):
+#while (state):
 
-    if player.wishCounter < wishes:
-        gachaPull()
-    else:
-        print("\n \nWhat do you want to do next?\n Type 1 to continue:\n Type 2 to print your Wish history: \n Type 3 To only print 4 and 5 Star history: \n Type 4 to only print 5 Star history: \n Type 5 to exit:")
-        d = int(input(" Type here: "))
-        if d == 1:
-            resume = int(input("Input the number of wishes you want to do. "))
-            wishes = wishes + resume
-        elif d == 2:
-            printOut()
-        elif d == 3:
-            printOut4()
-        elif d == 4:
-            printOut5()
-        elif d == 5:
-            state = False
+ #   if player.wishCounter < wishes:
+      #  gachaPull()
+  #  else:
+   #     print("\n \nWhat do you want to do next?\n Type 1 to continue:\n Type 2 to print your Wish history: \n Type 3 To only print 4 and 5 Star history: \n Type 4 to only print 5 Star history: \n Type 5 to exit:")
+    #    d = int(input(" Type here: "))
+     #   if d == 1:
+      #      resume = int(input("Input the number of wishes you want to do. "))
+       #     wishes = wishes + resume
+        #elif d == 2:
+         #   printOut()
+        #elif d == 3:
+         #   printOut4()
+        #elif d == 4:
+         #   printOut5()
+        #elif d == 5:
+         #   state = False
 
 
 
