@@ -5,6 +5,7 @@ Simulator point was to prove/disprove the hidden "soft pity" mechanic that isn't
 
 The simulator is based on the information available in the game (drop rates, pity mechanics, etc). 
 This means that it doesn't involve the hidden "soft pity" mechanic that's in the game so the rates are and stay ruthless. 
+The advertised drop rates are, 5 stars, 0.6%, 4 stars, 5.1% and the rest are 3 stars. 
 
 The gacha mechanic is supposed to work in a way that every 10th pull is guaranteed to be a 4 star (if the prior 9 were 3 stars) and 90th pull is guaranteed to be a five star (if the prior 89 were 4 or 3 stars).
 
