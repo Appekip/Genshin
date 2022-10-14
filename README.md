@@ -1,5 +1,5 @@
 # Genshin
-Gacha mechanic (loot box) simulated with a gui. Program simulates the current banner available in Genshin's version 3.1. 
+Gacha mechanic (loot box) simulated with a gui. Program simulates the current banner available in Genshin's version 3.1. (Cyno's rate up banner)
 
 Simulator point was to prove/disprove the hidden "soft pity" mechanic that isn't advertized anywhere.
 
